@@ -1,0 +1,279 @@
+@media screen and (max-width: 480px) { /*Edição para tela de celular*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+	h1{
+		text-align:center
+	}
+
+	nav{
+		position:static
+	}
+
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%
+	}
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Página INDEX*/
+.banner{
+	width:100%;
+}
+
+.titulo-principal{
+	text-align:center;
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 1em;
+	clear: left; /*Limpa o comando float, logo, o titulo não é afetado pelo float*/
+}
+
+.utensilios{
+	width: 120px;
+	float: left; /*Permite a imagem e o texto ficarem na mesma linha*/
+	margin: 0 20px 20px 0;
+}
+
+.principal{
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p{
+	margin-bottom: 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888)
+}
+
+.mapaajuste{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p{
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+}
+
+.itens{
+	line-height: 1.5; /*Tamanho da linha do texto*/
+
+}
+
+.itens:before{ /*Pseudo-elemnto que configura o conteudo abaixo, antes do texto no item itens*/
+	content: "☆";
+}
+
+.itens:nth-child(1){ /*Pseudo-elemento que, dentro da classe itens, pega a primeira linha e altera conforme descrito abaixo*/
+	font-weight: bold;
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagem-beneficios{
+	width: 60%;
+	opacity: 0.4; /*Transforma a imagem meio transparente, sem luz*/
+	transition: 500ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover{
+	opacity: 1;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*Ambas páginas*/
+
+header{
+	background: #BBBBBB;
+	padding: 20px 0; /*Espaçamento do cabeçalho, para melhor aparência visual*/
+}
+
+.caixa{
+	position: relative;
+	width: 940px; /*largura padrão de páginas da web*/
+	margin: 0 auto; /*margem da página automática, independente do tamanho da tela*/
+}
+
+nav{
+	position: absolute; /*Libera a caixa de navegação para ser inserida em qualquer lugar, conforme tamanhos definidos abaixo*/
+	Top: 110px;
+	right: 0;
+}
+
+nav li{ /*dentro da navegação, os itens li*/
+	display: inline; /*Apresenta o display inline, sem bloqueio de tamanho*/
+	margin: 0 0 0 15px; /*Criação de margem em cada item do menu*/
+}
+
+nav a{
+	text-transform: uppercase; /*Transforma o texto em caixa alta*/
+	color: #000000; /*Cor do texto em preto*/
+	font-weight: bold; /*Texto negrito*/
+	font-size: 22px; /*Tamanho do texto*/
+	text-decoration: none; /*Retira o sublinhado dos textos*/
+}
+nav a:hover{  /*Apresenta o que será feito, quanto o mouse passar por cima do menu de navegação*/
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+footer{
+	background: url("bg.jpg");
+	text-align: center;
+	padding: 40px 0;
+}
+
+footer p{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+/*Finalizado ambas as páginas*/
+
+/*Página de produtos*/
+
+.produtos{
+	position: relative;
+	width: 940px;
+	margin: 50px auto;
+}
+
+.produtos li{ /*Formatação para possibilitar os quadrados laterais*/
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	padding: 30px 20px;
+	margin: 0 1%;
+	box-sizing: border-box; /*Faz com que o padding se adeque a margem*/
+
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px; /*angulação da borda*/
+	/*border: 2px solid #000000  -  Resumido em uma unica linha*/;
+}
+.produtos li:hover{
+	border-color: #C78C19;
+}
+.produtos li:hover h2{
+	font-size: 34px;
+}
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.descricao{
+	font-size: 18px;
+	padding: 10px;
+}
+
+.preco{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/*Finalizado a pagina de produtos*/
+
+/*Página de contato*/
+
+.principalcontato{
+	width: 940px;
+	margin: 0 auto;
+}
+
+Form{
+	margin: 40px 0;
+
+}
+
+form label, form legend{
+	display: block;
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.input-padrao{
+	display: block;
+	margin-bottom: 15px;
+	padding: 5px 15px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.5s all; /*Tempo de transição com o hover*/
+	cursor: pointer; /*Altera o botão do mouse quando o usuário passar o botão do mouse por cima*/
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2); /*Aumenta o item em 20% ao passar o mouse por cima*/
+}
+
+table{
+	width: 20%;
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid #000000;
+	font-size: 17px;
+	padding: 5px 20px;
+}

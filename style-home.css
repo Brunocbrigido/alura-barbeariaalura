@@ -1,0 +1,95 @@
+header{
+	background: #BBBBBB;
+	padding: 20px 0; /*Espaçamento do cabeçalho, para melhor aparência visual*/
+}
+
+.caixa{
+	position: relative;
+	width: 940px; /*largura padrão de páginas da web*/
+	margin: 0 auto; /*margem da página automática, independente do tamanho da tela*/
+}
+
+nav{
+	position: absolute; /*Libera a caixa de navegação para ser inserida em qualquer lugar, conforme tamanhos definidos abaixo*/
+	Top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline; 
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-transform: uppercase; /*Transforma o texto em caixa alta*/
+	color: #000000; /*Cor do texto em preto*/
+	font-weight: bold; /*Texto negrito*/
+	font-size: 22px; /*Tamanho do texto*/
+	text-decoration: none; /*Retira o sublinhado dos textos*/
+}
+nav a:hover{  /*Apresenta o que será feito, quanto o mouse passar por cima do menu de navegação*/
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+#Banner{
+	width: 100%; /*Largura total da imagem em 100%*/
+}
+
+.principal{
+	background: #CCCCCC;  
+	padding: 30px; /*espaçamento do texto de 30 pixels*/
+} /*Alteração da cor de fundo para cinza*/
+
+.titulo-principal{
+	padding-left: 20px; /*Espaçamento a esquerda de 20 pixels*/
+}
+
+P{
+	text-align: center
+} /*Alteração do alinhamento do texto para centralização, onde houve novo paragrafo com a tag P (obs:  já centralizado acima também)*/
+
+#missao{
+	font-size: 20px /*Tamanho da fonte de 20pixels*/
+}
+
+em strong{
+	color: #FF0000;
+} /*Alteração da cor do texto em negrito, dentro da tag em*/
+
+
+.titulo-centralizado{
+	text-align: center; /*Texto centralizado*/ 
+}
+
+ul{
+	display: inline-block; /*desbloqueia as linhas, permitindo imagem e textos ao lado da lista criada*/
+	vertical-align: top; /*Alinha o texto com a imagem no topo*/
+	width: 20%; /*Largura da lista de 20%*/
+	margin-right: 15%; /*Apresenta uma margem de 15% no texto*/
+}
+
+.beneficios{
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+.itens{
+	font-style: italic;
+}
+
+.imagembeneficios{
+	width: 50%
+}
+
+footer{
+	background: url("bg.jpg");
+	text-align: center;
+	padding: 40px 0;
+}
+
+footer p{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}

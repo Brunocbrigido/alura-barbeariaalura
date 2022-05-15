@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title> Contato - Barbearia Alura </title>
+		<link rel="stylesheet" href="reset.css"> <!Reseta as configurações do navegador, para utilizar todo o campo da pagina>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura")></h1>
+				<nav> <!Apresenta a lista de itens em forma de menu>
+					<ul>
+						<li><a href="index.html"> Home </a></li> <!href direciona par ao link desejado>
+						<li><a href="produtos.html"> Produtos </a></li>
+						<li><a href="contato.html"> Contato </a></li>
+					</ul>
+				</nav>	
+			</div>
+		</header>
+
+		<main class="principalcontato">
+			<Form>
+				<Div>
+					<label for="nomesobrenome">Insira nome e sobrenome</label> <!Apresenta o título acima da caixa de texto>
+					<input type="text" id="nomesobrenome" class="input-padrao" required> <!Apresenta a caixa de entrada de texto>
+
+					<label for="email"> Insira seu e-mail </label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!Required, exigindo o preenchimento do campo>
+
+					<label for="telefone">Insira seu telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!Placeholder, apresenta um textinho no campo antes do usuário iniciar o preenchimento>
+
+					<label for="mensagem">Qual a sua mensagem</label>
+					<textarea cols="66px" rows="10px" id="mensagem" class="input-padrao" required></textarea>
+				</Div>
+				
+				<fieldset> 											<!Divisão específica para campos de seleção de dados>
+					<legend>Como prefere o nosso contato?</legend> <!Apresenta a seleção de um item em uma lista, caixinha redonda de itens>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label> 
+					<!O labem é direcionado a um input, o input é do tipo Radio, tem nome para só selecionar um unico campo, possui valor e identifidade para o label>
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label> <!Checked para sempre marcar o WhatsApp inicialmente>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual o horário prefere ser atendido?</legend> 
+					<select> <!Caixinha de seleção, aquela caixinha rolável>
+						<option>Manhã</option> <!Opções para a caixinha de seleção>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<Label><input type="Checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</Label> <!Caixinha de seleção>
+				<input type="submit" value="Enviar Formulário" class="enviar"> <!Botão de enviar formulário ao final da página>
+			</Form>	
+
+			<Table> <!Abre a tabela>
+				<thead> <!Abre o cabeçalho da tabela>
+					<tr>
+						<TH>Dia</TH>
+						<TH>Horário</TH>
+					</tr>
+				</Thead>
+				<tbody> <!Abre o corpo da tabela>
+					<Tr> <!São as linhas da tabela>
+						<TD>Segunda</TD> <!São as colunas da tabela>
+						<Td>8h até 20h</Td>
+					</Tr>
+					<Tr>
+						<TD>Quarta</TD>
+						<Td>8h até 20h</Td>
+						</Tr>
+					<Tr>
+						<TD>Sexta</TD>
+						<Td>8h até 20h</Td>
+					</Tr>
+				</tbody>
+			</Table>
+		</main>
+
+		<footer> <!Rodapé>
+			<img src="logo-branco.PNG" alt="Logo da barbearia Alura">
+			<p>&copy; Copyright Barbearia Alura 2022</p>
+		</footer>	
+
+	</body>
+</html>
